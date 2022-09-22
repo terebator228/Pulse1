@@ -1,0 +1,103 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url(../../bg/bg.png) center (center/cover) no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__subheader {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 5px;
+    }
+
+    &__icons {
+        margin-top: 60px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        width: 108px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: right;
+        color: #FFFFFF;
+        margin-top: 18px;
+        a {
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        min-height: 551px;
+        &__wrapper {
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        min-height: 320px;
+        &__wrapper {
+            margin-top: 60px;
+        }
+
+        &__header {
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        &__subheader {
+            font-size: 14px;
+            line-height: 14px;
+        }
+
+        &__icons {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        &__icon {
+            margin-top: 20px;
+        }
+    }
+}
