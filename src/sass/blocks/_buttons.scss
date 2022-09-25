@@ -22,15 +22,13 @@
         height: 58px;
         font-size: 16px;
     }
-}
-
-@media (max-width: 991px) {
-    .button {
-        &_submit {
-            
-        }
+    &_mini {
+        width: 135px;
+        height: 44px;
+        font-size: 14px;
     }
 }
+
 
 @media (max-width: 575px) {
     .button {

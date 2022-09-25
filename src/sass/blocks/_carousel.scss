@@ -1,0 +1,114 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+    }
+    .prev, .next  {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+    .next {
+        right: -66px;
+        left: auto;
+    }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .carousel {
+        .prev {
+            left: -15px;
+        }
+        .next {
+            right: -15px;
+        }
+        .tns-item {
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel {
+        .prev, .next {
+            width: 31px;
+            height: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .prev {
+            left: 50px;
+        }
+        .next {
+            right: 50px;
+        }
+        .tns-item {
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        .prev, .next {
+            img {
+                width: 80%;
+            }
+        }
+        .prev {
+            left: 30px;
+        }
+        .next {
+            right: 30px;
+        }
+        .tns-item {
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        .prev, .next {
+            img {
+                width: 80%;
+            }
+        }
+        .prev {
+            left: 15px;
+        }
+        .next {
+            right: 15px;
+        }
+        .tns-item {
+            img {
+                width: 70%;
+            }
+        }
+    }
+}
